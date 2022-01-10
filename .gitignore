@@ -35,6 +35,9 @@ gradle.properties
 *.ipr
 *.iws
 
+# VSCode
+.vscode/
+
 # Eclipse
 .classpath
 .project
