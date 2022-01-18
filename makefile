@@ -11,4 +11,4 @@ other_file.o: other_file.cpp other_file.h
 	$(CXX) -c -o $@ $<
 
 clean:
-	rm -f file
+	rm -f *.out *.o hello
