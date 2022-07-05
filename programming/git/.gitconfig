@@ -1,0 +1,12 @@
+[user]
+	email = beanbeanjuice@outlook.com
+	name = beanbeanjuice
+  signingkey = beanbeanjuice@outlook.com
+
+[commit]
+	gpgsign = true
+
+[tag]
+  gpgSign = true
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
