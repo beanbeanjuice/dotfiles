@@ -1,0 +1,3 @@
+DPI: 2100
+
+Valorant Sensitivity: 0.2
