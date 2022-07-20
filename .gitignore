@@ -1,3 +1,6 @@
+# Node/NPM
+/node_modules/
+
 # Latex Files
 *.aux
 *.fdb_latexmk
