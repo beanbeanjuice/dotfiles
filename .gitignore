@@ -41,8 +41,9 @@
 /out/
 gradle.properties
 
-# IntelliJ IDEA
+# JetBrains IDEA
 /.idea/
+/.fleet/
 *.iml
 *.ipr
 *.iws
