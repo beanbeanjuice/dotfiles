@@ -125,3 +125,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Rust Stuff
+debug/
+target/
+**/*.rs.bk
+*.pdb
