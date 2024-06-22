@@ -5,13 +5,13 @@ add_newline = true
 
 # Change the default prompt format
 format = """\
-[╭╴](238)$env_var\
-$all[╰─](238)$character"""
+[╭╴](gray)$env_var\
+$all[╰─](gray)$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[](238)"
-error_symbol = "[](238)"
+success_symbol = "[ ](gray)"
+error_symbol = "[ ](bright-red)"
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
@@ -27,24 +27,58 @@ format = "[$user]($style) "
 disabled = true  # disable in powershell
 show_always = false
 
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+format = "via [$symbol $name $version]($style) "
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
 [directory]
-truncation_length = 15
+truncation_length = 30
 truncation_symbol = "…/"
-home_symbol = " ~"
+home_symbol = "  ~"
 read_only_style = "197"
 read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
 
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
 [git_branch]
-symbol = " "
+symbol = "󰊢 "
 format = "on [$symbol$branch]($style) "
-truncation_length = 15
+truncation_length = 30
 truncation_symbol = "…/"
-style = "bold green"
+style = "green bold"
 
 [git_status]
 format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
+style = "green bold "
 conflicted = "🏳"
 up_to_date = " "
 untracked = " "
@@ -57,32 +91,137 @@ staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
 
-[terraform]
-format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
+[golang]
+symbol = " "
 
-[vagrant]
-format = "via [ vagrant $version]($style) "
+[gradle]
+format = "via [$symbol gradle $version]($style) "
+symbol = ""
 
-[docker_context]
-format = "via [ $context](bold blue) "
+[guix_shell]
+symbol = " "
 
-[helm]
-format = "via [ $version](bold purple) "
+[haskell]
+symbol = " "
 
-[python]
-symbol = " "
-python_binary = "python3"
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+format = "via [$symbol java $version]($style) "
+style = 'red bold'
+symbol = "☕"
+
+[julia]
+symbol = " "
+
+[kotlin]
+format = "via [$symbol kotlin $version]($style) "
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
 
 [nodejs]
-format = "via [ $version](bold green) "
-disabled = true
+format = "via [ $version](bold green) "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+format = "via [$symbol python $version]($style) "
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
 
 [ruby]
-format = "via [ $version]($style) "
+symbol = " "
 
-[kubernetes]
-format = 'on [ $context\($namespace\)](bold purple) '
-disabled = false
-[kubernetes.context_aliases]
-"clcreative-k8s-staging" = "cl-k8s-staging"
-"clcreative-k8s-production" = "cl-k8s-prod"
+[rust]
+format = "via [$symbol rust $version]($style) "
+symbol = " "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
