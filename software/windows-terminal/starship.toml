@@ -85,17 +85,17 @@ untracked = " "
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
-stashed = " "
+stashed = " "
 modified = " "
 staged = '[++\($count\)](green)'
-renamed = "襁 "
+renamed = "󰣞 "
 deleted = " "
 
 [golang]
 symbol = " "
 
 [gradle]
-format = "via [$symbol gradle $version]($style) "
+format = "via [$symbol $version]($style) "
 symbol = ""
 
 [guix_shell]
@@ -114,7 +114,7 @@ symbol = " "
 ssh_symbol = " "
 
 [java]
-format = "via [$symbol java $version]($style) "
+format = "using [$symbol $version]($style) "
 style = 'red bold'
 symbol = "☕"
 
@@ -122,7 +122,7 @@ symbol = "☕"
 symbol = " "
 
 [kotlin]
-format = "via [$symbol kotlin $version]($style) "
+format = "tooled with [$symbol $version]($style) "
 symbol = " "
 
 [lua]
